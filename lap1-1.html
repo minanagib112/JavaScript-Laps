@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+</head>
+
+<body>
+    <script>
+        // Ask user for first name
+        var firstName = prompt("Please enter your first name:");
+
+        // Ask user for last name
+        var lastName = prompt("Please enter your last name:");
+
+        // Confirm full name
+        var fullName = `${firstName} ${lastName}`;
+        confirm(`Your full name is: ${fullName}`);
+
+        // Ask user for birth year
+        var birthYear = prompt("Please enter your birth year:");
+
+        // Calculate age
+        var currentYear = new Date().getFullYear();
+        var age = currentYear - birthYear;
+
+        // Welcome user
+        alert(`Welcome ${fullName}! You are ${age} years old.`);
+    </script>
+</body>
+
+</html>

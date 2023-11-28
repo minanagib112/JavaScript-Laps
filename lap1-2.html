@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <script>
+        alert("Welcome to the first release of our calculator! This version only supports summation.");
+
+        // Ask user for the first number
+        var firstNumber = prompt("Please enter the first number:");
+        firstNumber = Number(firstNumber);
+
+        // Ask user for the second number
+        var secondNumber = prompt("Please enter the second number:");
+        secondNumber = Number(secondNumber);
+
+        // Calculate the sum
+        var sum = firstNumber + secondNumber;
+
+        // Display the result
+        alert(`${firstNumber} + ${secondNumber} = ${sum}`);
+    </script>
+</body>
+
+</html>
